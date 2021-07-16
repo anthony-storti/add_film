@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--	Author: Anthony Storti
+		Date:	October 31, 2019
+		File:	add_film.html
+		Purpose:HTML form to add data that passes to php form
+-->
+
+<html>
+<head>
+	<title>Enter Film</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+	<h1>ADD A NEW FILM RECORD</h1>
+
+	<form action = "add_film.php" method = "post" >
+
+	<table border='0'>
+	<tr><td>Title</td>
+		<td><input type = "text" size = "20" name = "title"></td></tr>
+	<tr><td>Description</td>
+		<td><input type = "text" size = "20" name = "desc"></td></tr>
+	<tr><td>Release Year</td>
+		<td><input type = "text" size = "20" name = "rYear"></td></tr>
+	<tr><td>language ID</td>
+		<td><input type = "text" size = "20" name = "lId"></td></tr>
+	<tr><td>Rental Duration </td>
+		<td><input type = "text" size = "20" name = "rDur"></td></tr>
+  <tr><td>Rental Rate </td>
+  	<td><input type = "text" size = "20" name = "rRate"></td></tr>
+  <tr><td>Length </td>
+    <td><input type = "text" size = "20" name = "len"></td></tr>
+  <tr><td>Replacement Cost </td>
+    <td><input type = "text" size = "20" name = "repCost"></td></tr>
+  <tr><td>Rating </td>
+    <td><select name="MPAA">
+        <option value="G">G</option>
+        <option value="PG">PG</option>
+        <option value="PG-13">PG-13</option>
+        <option value="R">R</option>
+        <option value="NC-17">NC-17</option>
+      </select></td></tr>
+  <tr><td>Special Features </td>
+  	<td><select name="specF">
+        <option value="Trailers">Trailers</option>
+        <option value="Commentaries">Commentaries</option>
+        <option value="Deleted Scenes">Deleted Scenes</option>
+        <option value="Behind the Scenes">Behind the Scenes</option>
+      </select></tr>
+  </table>
+	<p><input type = "submit" value = "Enter New Film"></p>
+  <button type="submit" formaction="manager.html">CANCEL</button>
+
+	</form>
+
+</body>
+</html>
